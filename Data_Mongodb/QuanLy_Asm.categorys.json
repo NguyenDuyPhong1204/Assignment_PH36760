@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "65fb0f6e5c5f6cc0f4543d5c"
+  },
+  "title": "Vegetable",
+  "imageCategory": "https://static.vecteezy.com/system/resources/previews/022/984/730/non_2x/vegetable-transparent-free-png.png"
+},
+{
+  "_id": {
+    "$oid": "65fb10f65c5f6cc0f4543d68"
+  },
+  "title": "Fruit",
+  "imageCategory": "https://cdn-icons-png.flaticon.com/512/3194/3194766.png"
+},
+{
+  "_id": {
+    "$oid": "6613dff1a672ea83f4cd4e25"
+  },
+  "title": "Drink",
+  "imageCategory": "https://cdn-icons-png.flaticon.com/512/2451/2451715.png"
+},
+{
+  "_id": {
+    "$oid": "6613dff3a672ea83f4cd4e26"
+  },
+  "title": "Grain",
+  "imageCategory": "https://cdn-icons-png.flaticon.com/512/3967/3967367.png"
+}]

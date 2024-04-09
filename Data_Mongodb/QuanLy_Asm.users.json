@@ -1,0 +1,38 @@
+[{
+  "_id": {
+    "$oid": "661209567ff54380c2b8650a"
+  },
+  "emailUser": "nguyenduyphong12122004@gmail.com",
+  "username": "Phongnd",
+  "password": "phong1204",
+  "fullname": "Phong",
+  "imageUser": "http://10.0.2.2:3000/uploads/imageUser-1712625285307imageUser661209567ff54380c2b8650a.png",
+  "addressUser": "Yen Bai",
+  "createdAt": {
+    "$date": "2024-04-07T02:47:50.452Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-09T01:14:45.328Z"
+  },
+  "__v": 0,
+  "phoneNumber": "0888667400"
+},
+{
+  "_id": {
+    "$oid": "66146a49cbd967d301191ec6"
+  },
+  "emailUser": "nduyphong570@gmail.com",
+  "username": "PhongBaoTo",
+  "password": "phong1204",
+  "fullname": "Nguyen Duy Phong",
+  "imageUser": "http://10.0.2.2:3000/uploads/imageUser-1712617763514imageUser66146a49cbd967d301191ec6.png",
+  "addressUser": "Yen Bai",
+  "phoneNumber": "0888667400",
+  "createdAt": {
+    "$date": "2024-04-08T22:06:01.682Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-08T23:09:23.528Z"
+  },
+  "__v": 0
+}]

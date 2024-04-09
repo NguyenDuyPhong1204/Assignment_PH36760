@@ -1,0 +1,208 @@
+[{
+  "_id": {
+    "$oid": "65fb11425c5f6cc0f4543d6a"
+  },
+  "productName": "Cam",
+  "productImage": "https://parspng.com/wp-content/uploads/2022/05/orangepng.parspng.com-7.png",
+  "description": "Cam ngon ngọt",
+  "productPrice": 20000,
+  "categoryID": "65fb10f65c5f6cc0f4543d68",
+  "quantity": 100,
+  "isFavorite": false,
+  "isCart": true
+},
+{
+  "_id": {
+    "$oid": "65fb11cf5c5f6cc0f4543d6e"
+  },
+  "productName": "Táo",
+  "productImage": "https://pngfre.com/wp-content/uploads/apple-poster.png",
+  "description": "Táo ngon ngọt",
+  "productPrice": 20000,
+  "categoryID": "65fb10f65c5f6cc0f4543d68",
+  "quantity": 100,
+  "isCart": true,
+  "isFavorite": true
+},
+{
+  "_id": {
+    "$oid": "65fb12275c5f6cc0f4543d6f"
+  },
+  "productName": "Ổi",
+  "productImage": "https://www.onelife.com.vn/wp-content/uploads/2020/01/Guava-PNG-Pic.png",
+  "description": "Ổi ngon ngọt",
+  "productPrice": 20000,
+  "categoryID": "65fb10f65c5f6cc0f4543d68",
+  "quantity": 100,
+  "isCart": true,
+  "isFavorite": true
+},
+{
+  "_id": {
+    "$oid": "6613e226a672ea83f4cd4e28"
+  },
+  "productName": "Vải",
+  "productImage": "https://static.vecteezy.com/system/resources/previews/029/200/309/non_2x/lychee-transparent-background-free-png.png",
+  "description": "Vải ngon ngọt",
+  "productPrice": 20000,
+  "categoryID": "65fb10f65c5f6cc0f4543d68",
+  "quantity": 100,
+  "isCart": false,
+  "isFavorite": false
+},
+{
+  "_id": {
+    "$oid": "6613e2e1a672ea83f4cd4e29"
+  },
+  "productName": "Xoài",
+  "productImage": "https://static.vecteezy.com/system/resources/previews/026/795/005/original/mango-fruit-tropical-transparent-png.png",
+  "description": "Xoài ngon ngọt",
+  "productPrice": 20000,
+  "categoryID": "65fb10f65c5f6cc0f4543d68",
+  "quantity": 100,
+  "isCart": false,
+  "isFavorite": false
+},
+{
+  "_id": {
+    "$oid": "6613e352a672ea83f4cd4e2f"
+  },
+  "productName": "Rau bắp cải",
+  "productImage": "https://png.pngtree.com/png-clipart/20201208/original/pngtree-one-vegetable-cabbage-png-image_5530141.jpg",
+  "description": "Rau xanh",
+  "productPrice": 10000,
+  "categoryID": "65fb0f6e5c5f6cc0f4543d5c",
+  "quantity": 100,
+  "isCart": false,
+  "isFavorite": false
+},
+{
+  "_id": {
+    "$oid": "6613e38da672ea83f4cd4e31"
+  },
+  "productName": "Rau sà lách",
+  "productImage": "https://purepng.com/public/uploads/large/purepng.com-green-lettucevegetablessalad-lettuce-spinach-leaves-leafs-green-lettuce-9415246830442i0w0.png",
+  "description": "Rau xanh",
+  "productPrice": 5000,
+  "categoryID": "65fb0f6e5c5f6cc0f4543d5c",
+  "quantity": 100,
+  "isCart": false,
+  "isFavorite": false
+},
+{
+  "_id": {
+    "$oid": "6613e3d4a672ea83f4cd4e32"
+  },
+  "productName": "Củ cà rốt",
+  "productImage": "https://www.pikpng.com/pngl/b/53-530112_carrot-png-download-image-carrot-png-clipart.png",
+  "description": "Rau xanh",
+  "productPrice": 10000,
+  "categoryID": "65fb0f6e5c5f6cc0f4543d5c",
+  "quantity": 100,
+  "isCart": false,
+  "isFavorite": false
+},
+{
+  "_id": {
+    "$oid": "6613e3fba672ea83f4cd4e33"
+  },
+  "productName": "Cà chua",
+  "productImage": "https://png.pngtree.com/png-clipart/20230113/ourmid/pngtree-red-fresh-tomato-with-green-leaf-png-image_6561484.png",
+  "description": "Cà chua tươi",
+  "productPrice": 10000,
+  "categoryID": "65fb0f6e5c5f6cc0f4543d5c",
+  "quantity": 100,
+  "isCart": false,
+  "isFavorite": false
+},
+{
+  "_id": {
+    "$oid": "6613e44da672ea83f4cd4e36"
+  },
+  "productName": "Trà xanh",
+  "productImage": "https://khothietke.net/wp-content/uploads/2021/03/taifree1434-ly-tra-xanh-tra-tuoi.png",
+  "description": "Trà tươi ngon",
+  "productPrice": 10000,
+  "categoryID": "6613dff1a672ea83f4cd4e25",
+  "quantity": 100,
+  "isCart": false,
+  "isFavorite": false
+},
+{
+  "_id": {
+    "$oid": "6613e48aa672ea83f4cd4e37"
+  },
+  "productName": "Nước ép rau củ",
+  "productImage": "https://png.pngtree.com/png-clipart/20230430/original/pngtree-fruits-and-fruit-juices-psd-transparent-png-image_9124662.png",
+  "description": "Nước rau củ tươi ngon",
+  "productPrice": 10000,
+  "categoryID": "6613dff1a672ea83f4cd4e25",
+  "quantity": 100,
+  "isCart": false,
+  "isFavorite": false
+},
+{
+  "_id": {
+    "$oid": "6613e4b0a672ea83f4cd4e38"
+  },
+  "productName": "Nước dừa",
+  "productImage": "https://png.pngtree.com/png-clipart/20230927/original/pngtree-fresh-coconut-water-drink-png-image_13144672.png",
+  "description": "Nước dừa tươi ngon",
+  "productPrice": 10000,
+  "categoryID": "6613dff1a672ea83f4cd4e25",
+  "quantity": 100,
+  "isCart": false,
+  "isFavorite": false
+},
+{
+  "_id": {
+    "$oid": "6613e4eaa672ea83f4cd4e39"
+  },
+  "productName": "Sữa chua",
+  "productImage": "https://sieuthitt.com/images/stories/virtuemart/product/sua%20chua_vinamilk_nha%20dam.png",
+  "description": "Sữa chua thơm ngon",
+  "productPrice": 10000,
+  "categoryID": "6613dff1a672ea83f4cd4e25",
+  "quantity": 100,
+  "isCart": false,
+  "isFavorite": false
+},
+{
+  "_id": {
+    "$oid": "6613e562a672ea83f4cd4e3c"
+  },
+  "productName": "Ngũ cốc nguyên hạt",
+  "productImage": "https://png.pngtree.com/png-clipart/20230303/original/pngtree-whole-grains-whole-grains-whole-grains-grains-png-image_8969923.png",
+  "description": "Ngũ cốc thơm ngon",
+  "productPrice": 10000,
+  "categoryID": "6613dff3a672ea83f4cd4e26",
+  "quantity": 100,
+  "isCart": false,
+  "isFavorite": false
+},
+{
+  "_id": {
+    "$oid": "6613e58ca672ea83f4cd4e3d"
+  },
+  "productName": "Yến mạch",
+  "productImage": "https://png.pngtree.com/png-clipart/20220130/original/pngtree-delicious-oat-transparent-element-png-image_7241587.png",
+  "description": "Yến mạch không đường",
+  "productPrice": 10000,
+  "categoryID": "6613dff3a672ea83f4cd4e26",
+  "quantity": 100,
+  "isCart": false,
+  "isFavorite": false
+},
+{
+  "_id": {
+    "$oid": "6613e5d5a672ea83f4cd4e3e"
+  },
+  "productName": "Ngũ cốc",
+  "productImage": "https://png.pngtree.com/png-clipart/20231024/original/pngtree-a-selection-of-assorted-whole-grains-and-dried-fruits-presented-on-png-image_13416778.png",
+  "description": "Ngũ cốc với trái cây sấy khô",
+  "productPrice": 10000,
+  "categoryID": "6613dff3a672ea83f4cd4e26",
+  "quantity": 100,
+  "isCart": false,
+  "isFavorite": false
+}]

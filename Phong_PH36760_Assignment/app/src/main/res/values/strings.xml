@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Phong_Assignment</string>
+    <string name="tv_dangki"><b>Đăng kí ngay</b></string>
+    <string name="tv_dangnhap"><b>Đăng nhập ngay</b></string>
+    <string name="tv_quenmatkhau"><u><i>Quên mật khẩu</i></u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

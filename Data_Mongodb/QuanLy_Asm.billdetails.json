@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "65fb15325c5f6cc0f4543da0"
+  },
+  "billId": "65fb14905c5f6cc0f4543d9a",
+  "productId": "65fb11425c5f6cc0f4543d6a",
+  "quantity": 1
+},
+{
+  "_id": {
+    "$oid": "65fb15565c5f6cc0f4543da2"
+  },
+  "billId": "65fb14a55c5f6cc0f4543d9b",
+  "productId": "65fb11cf5c5f6cc0f4543d6e",
+  "quantity": 1
+}]

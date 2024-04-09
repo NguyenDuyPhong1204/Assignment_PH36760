@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="style_image">
+        <item name="cornerSize">50dp</item>
+    </style>
+
+    <style name="ToolbarBackButtonStyle" parent="Widget.AppCompat.Toolbar.Button.Navigation">
+        <!-- Đặt màu cho icon của nút back -->
+        <item name="android:tint">#FFF</item>
+    </style>
+
+</resources>
