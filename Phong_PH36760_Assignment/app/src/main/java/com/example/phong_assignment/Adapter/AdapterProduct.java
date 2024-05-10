@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Filter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -44,11 +45,14 @@ public class AdapterProduct extends RecyclerView.Adapter<AdapterProduct.viewHole
     private User currentUser;
     private SharedPreferences sharedPreferences;
     private ArrayList<Favorite> listFavorite;
+    private ArrayList<Product> filterProduct;
     private Product product;
+
 
     public AdapterProduct(Context context, ArrayList<Product> list) {
         this.context = context;
         this.list = list;
+        this.filterProduct = list;
     }
 
     @NonNull
@@ -183,6 +187,21 @@ public class AdapterProduct extends RecyclerView.Adapter<AdapterProduct.viewHole
         }
     };
 
+    public void filter(String query){
+        filterProduct.clear();// Xóa danh sách sản phẩm đã lọc trước đó
 
+        // Nếu từ khóa tìm kiếm rỗng, hiển thị tất cả sản phẩm
+        if(query.isEmpty()) {
+            filterProduct.addAll(list);
+        }else{
+            // Lọc danh sách sản phẩm dựa trên từ khóa tìm kiếm
+            for(Product product1 : list){
+                if (product1.getProductName().toLowerCase().contains(query.toLowerCase())) {
+                    filterProduct.add(product1);
+                }
+            }
+        }
+        notifyDataSetChanged();
+    }
 
 }

@@ -119,4 +119,7 @@ public interface APIServices {
 
     @DELETE("delete-favorite-by-id/{id}")
     Call<Response_Model<Favorite>> deleteFavorite(@Path("id") String id);
+
+    //tìm kiếm
+
 }

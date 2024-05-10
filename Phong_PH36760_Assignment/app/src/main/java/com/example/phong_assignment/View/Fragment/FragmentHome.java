@@ -10,9 +10,13 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.EditorInfo;
+import android.widget.SearchView;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.example.phong_assignment.Adapter.AdapterCategory;
@@ -66,6 +70,25 @@ public class FragmentHome extends Fragment {
 
         Glide.with(getContext()).load(image).into(binding.imgUser);
         Log.d("ImageFragment", "onClick: " + image);
+
+        binding.edtSearch.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                if (actionId == EditorInfo.IME_ACTION_SEARCH) {
+                    //lấy từ khoá từ ô tìm kiếm
+                    String key = binding.edtSearch.getText().toString();
+
+                    httpRequest.callApi().searchProduct(key)//phương thức api cần thực thi
+                            .enqueue(getListProduct);//xử lý bất đồng bộ
+                    //vì giá trị trả về vẫ là một list distributor
+                    //nên có thể sử dụng lại callback của getListDistributor
+                    return true;
+                }
+
+                return false;
+            }
+        });
+
         return view;
     }
 
@@ -94,5 +117,21 @@ public class FragmentHome extends Fragment {
         }
     };
 
+    Callback<Response_Model<ArrayList<Product>>> getListProduct = new Callback<Response_Model<ArrayList<Product>>>() {
+        @Override
+        public void onResponse(Call<Response_Model<ArrayList<Product>>> call, Response<Response_Model<ArrayList<Product>>> response) {
+            if (response.isSuccessful()) {
+                if (response.body().getStatus() == 200) {
+                    ArrayList<Product> list = response.body().getData();
+                    adapterProduct =  new AdapterProduct(getContext(), list);
+                    binding.rcvFruit.setAdapter(adapterProduct);
+                }
+            }
+        }
 
+        @Override
+        public void onFailure(Call<Response_Model<ArrayList<Product>>> call, Throwable t) {
+            Log.d(">>>GetListProduct", "onFailure: " + t.getMessage());
+        }
+    };
 }

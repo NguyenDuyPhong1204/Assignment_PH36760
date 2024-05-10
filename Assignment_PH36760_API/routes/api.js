@@ -705,4 +705,8 @@ router.get("get-image-by-userId/:userId", async function(req,res){
         })
     }
 })
+
+
+// Tìm kiếm sản phẩm
+
 module.exports = router;
