@@ -120,6 +120,8 @@ public interface APIServices {
     @DELETE("delete-favorite-by-id/{id}")
     Call<Response_Model<Favorite>> deleteFavorite(@Path("id") String id);
 
-    //tìm kiếm
+    //đổi mật khẩu
+    @PUT("change-password/{id}")
+    Call<Response_Model<User>> changePassword(@Path("id") String id, @Body User user);
 
 }

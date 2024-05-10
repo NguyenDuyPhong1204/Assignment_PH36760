@@ -12,6 +12,7 @@ import com.example.phong_assignment.View.Fragment.FragmentBill;
 import com.example.phong_assignment.View.Fragment.FragmentCart;
 import com.example.phong_assignment.View.Fragment.FragmentFavorite;
 import com.example.phong_assignment.View.Fragment.FragmentHome;
+import com.example.phong_assignment.View.Fragment.FragmentSetting;
 import com.example.phong_assignment.databinding.ActivityMain2Binding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
@@ -53,6 +54,10 @@ public class MainActivity extends AppCompatActivity {
                 } else if (id == R.id.item_favorite) {
                     //fragment favorite
                     getSupportFragmentManager().beginTransaction().replace(R.id.frg_main, new FragmentFavorite()).commit();
+                    return true;
+                }else if(id == R.id.item_setting){
+                    //fragment setting
+                    getSupportFragmentManager().beginTransaction().replace(R.id.frg_main, new FragmentSetting()).commit();
                     return true;
                 }
                 return false;

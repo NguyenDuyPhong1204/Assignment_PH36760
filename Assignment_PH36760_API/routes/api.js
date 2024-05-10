@@ -684,20 +684,20 @@ router.get("/get-list-bill-by-id/:userId", async function (req, res) {
             })
         }
     } catch (error) {
-        console.log("Lỗi lấy bill" +error);
+        console.log("Lỗi lấy bill" + error);
     }
 })
 
-router.get("get-image-by-userId/:userId", async function(req,res){
-    const {userId} = req.params;
+router.get("get-image-by-userId/:userId", async function (req, res) {
+    const { userId } = req.params;
     const result = await User.findById(userId);
-    if(result){
+    if (result) {
         res.json({
             "status": 200,
             "message": "Lấy dữ liệu thành công",
             "data": result
         })
-    }else{
+    } else {
         res.json({
             "status": 400,
             "message": "Lấy dữ liệu thất bại",
@@ -707,6 +707,43 @@ router.get("get-image-by-userId/:userId", async function(req,res){
 })
 
 
-// Tìm kiếm sản phẩm
+//Đổi mật khẩu
+router.put('/change-password/:id', async (req, res) => {
+    try {
+        const { id } = req.params;
+        // Tìm người dùng theo ID
+        const user = await User.findById(id);
+        let result = null;
+        const data = req.body;
+        // Nếu không tìm thấy người dùng
+        if (!user) {
+            return res.status(404).json({ message: "Người dùng không tồn tại" });
+        }
+
+        // Cập nhật mật khẩu mới
+        if(user){
+            user.password = data.password ?? user.password
+            result = await user.save();
+            if(result){
+                res.json({
+                    "status": 200,
+                    "message": "Cập nhật thành công",
+                    "data": result
+                })
+            }else{
+                res.json({
+                    "status": 400,
+                    "message": "Cập nhật thất bại",
+                    "data": []
+                })
+            }
+        }
+       
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({ message: "Lỗi server" });
+    }
+});
+
 
 module.exports = router;

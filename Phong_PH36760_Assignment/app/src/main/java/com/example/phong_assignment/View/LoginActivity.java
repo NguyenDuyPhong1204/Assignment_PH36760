@@ -66,6 +66,7 @@ public class LoginActivity extends AppCompatActivity {
                 editor.putString("token", response.body().getToken());
                 editor.putString("refreshToken", response.body().getRefreshToken());
                 editor.putString("id", response.body().getData().getUserId());
+                editor.putString("password", response.body().getData().getPassword());
                 editor.apply();
                 //
                 startActivity(new Intent(LoginActivity.this, MainActivity.class));
